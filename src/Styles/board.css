@@ -1,0 +1,70 @@
+.board-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-row > div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-row > div:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.board-row > div:active {
+  background-color: #ccc;
+}
+
+.board-row > div > .square {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.board-row > div > .square.X {
+  color: red;
+}
+
+.board-row > div > .square.O {
+  color: blue;
+}
+
+/* Add some styles for when the game is over */
+
+.board-row > div.game-over {
+  background-color: #f00;
+  color: #fff;
+}
+
+.board-row > div.game-over.X {
+  background-color: #0f0;
+}
+
+.board-row > div.game-over.O {
+  background-color: #00f;
+}
+
+/* Add some styles for the winning combination*/
+
+.board-row > div.winner {
+  background-color: yellow;
+  color: #000;
+}
+
+.board-row > div.winner.X {
+  background-color: yellowgreen;
+}
+
+.board-row > div.winner.O {
+  background-color: cornflowerblue;
+}

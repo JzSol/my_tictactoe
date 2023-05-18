@@ -1,0 +1,65 @@
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.square:active {
+  background-color: #ccc;
+}
+
+/* Add some styles for the Square component */
+
+.square > .square-value {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.square > .square-value.X {
+  color: red;
+}
+
+.square > .square-value.O {
+  color: blue;
+}
+
+/* Add some styles for when the game is over */
+
+.square.game-over {
+  background-color: #f00;
+  color: #fff;
+}
+
+.square.game-over.X {
+  background-color: #0f0;
+}
+
+.square.game-over.O {
+  background-color: #00f;
+}
+
+/* Add some styles for the winning combination*/
+
+.square.winner {
+  background-color: yellow;
+  color: #000;
+}
+
+.square.winner.X {
+  background-color: yellowgreen;
+}
+
+.square.winner.O {
+  background-color: cornflowerblue;
+}
